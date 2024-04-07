@@ -17,7 +17,7 @@ IRIS está diseñado para ser una herramienta integral que se ajuste a las neces
 
 1. Crea una carpeta llamada iris en tu computador para este proyecto.
 2. Abre la carpeta creada con Visual Studio Code.
-3. Clona el siguiente repositorio en tu maquina:
+3. Clona el siguiente repositorio en tu maquina:  https://github.com/GeralAriza12/IRIS.git
 4. Avanza a la carpeta IRIS con el comando: cd IRIS + enter
 5. Instala las dependencias usando el comando: npm install
 6. Ejecuta el comendo: npm run dev
