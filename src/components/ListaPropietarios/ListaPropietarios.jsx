@@ -36,7 +36,7 @@ const ListaPropietarios = ({ propietarios }) => {
 
   return (
     <div>
-      <Card onClick={onOpen} cursor="pointer">
+      <Card cursor="pointer">
       <div className="container-card" width="100%">
         {propietarios.map((propietario, index) => (
           <div
