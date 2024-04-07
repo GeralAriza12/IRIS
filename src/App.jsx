@@ -1,20 +1,25 @@
+import { Suspense } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from './pages/Home/Home';
+import AddPropietario from './pages/AddPropietario';
+import SearchPropietario from './pages/SearchPropietario';
+import Menu from './components/Menu';
 import './App.css'
-import Formulario from './components/Formulario/Formulario';
-import ListaPropietarios from './components/ListaPropietarios/ListaPropietarios';
-import useLocalStorage from './hooks/useLocalStorage';
 
 function App() {
-  const [propietarios, setPropietarios] = useLocalStorage('propietarios', []);
-
-  const agregarPropietario = (propietario) => {
-    setPropietarios([...propietarios, propietario])
-  }
-
+  
   return (
     <div>
-      <h1>IRIS PROPIETARIOS</h1>
-      <Formulario agregarPropietario={agregarPropietario} />
-      <ListaPropietarios propietarios={propietarios} />
+      <BrowserRouter>
+        <Menu />
+        <Suspense fallback={<h2>Estamos procesando tu solucitud ...</h2>}>
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/enter-owner' element={<AddPropietario/>}/>
+          <Route path='/search-for-owner' element={<SearchPropietario />}/>
+        </Routes>
+        </Suspense>
+      </BrowserRouter>
     </div>
   )
 }

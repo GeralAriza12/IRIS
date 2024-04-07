@@ -1,42 +1,136 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+ul{
+  list-style-type: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.link-style {
+  color: black;
+  text-decoration: none;
+  font-size: medium;
+}
+
+#home-page {
+  overflow: hidden;
+}
+
+form,
+label,
+input,
+select {
+  font-family: "Roboto", sans-serif;
+  margin: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  color: black;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border: 1px solid #0a0a0a;
+  cursor: pointer;
+  margin: 13px 0px 0px 5px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+  color: white;
+  background-color: black;
+}
+
+h1 {
+  font-size: 39px;
+  color: #23244b;
+  margin-bottom: 10px;
+}
+
+h2 {
+  display: flex;
+  font-size: 31px;
+  color: #30315e;
+  margin-bottom: 7px;
+  justify-content: center;
+}
+
+.buttons {
+  margin-left: 46px;
+}
+
+.toMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.menu li {
+  position: relative;
+  margin-right: 81px;
+}
+
+.menu,
+.mobile-menu {
+  width: 851px;
+  height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  list-style: none;
+  margin-left: 349px;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 0px 77px 0px 56px;
+  justify-content: flex-end;
+}
+
+.menu li::before {
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  margin-bottom: -2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+  background: linear-gradient(to right, #b2c6f1, #9478c1, #ab815f);
+}
+
+.menu li:hover::before {
+  transform: scaleX(1);
+}
+
+.menu[data-animation="center"] a::before {
+  transform-origin: center;
+}
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  .menu {
+    display: none;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .mobile-menu {
+    display: block;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .toMenu {
+    justify-content: flex-end;
+    text-align: end;
+  }
 }

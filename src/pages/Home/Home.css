@@ -1,0 +1,75 @@
+#home-content {
+  overflow-y: hidden;
+}
+
+.fondo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+}
+
+.fondoImg {
+  position: absolute;
+  top: 0;
+  right: 40%;
+  width: 60%;
+  z-index: -1;
+}
+
+.fondoImgPerson {
+  width: 50%;
+  z-index: 0;
+}
+
+.fondHome {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+  z-index: 1;
+  bottom: 576px;
+  left: 50px;
+}
+
+.conten {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .fondo {
+    justify-content: center;
+  }
+
+  .fondoImg {
+    display: flex;
+  }
+
+  .fondoImgPerson {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 50%;
+    width: 100%;
+  }
+
+  .fondHome {
+    width: 80%;
+  }
+  button {
+    margin-left: 26px;
+    width: 111px;
+  }
+  .cardTarjet {
+    width: 300px;
+  }
+}

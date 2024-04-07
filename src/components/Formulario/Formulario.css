@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  background-color: #f7f7f7;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin: 0px 2.5px 19px 2.5px;
+}
+
+input,
+select {
+  width: 100%;
+  height: 43px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  border-radius: 12px;
+  position: relative;
+}
+
+input:focus {
+  transition: background-color 0.3s ease;
+  background-color: #f0f0f0;
+}
+
+input::placeholder {
+  color: #aaaaaabd;
+  font-weight: 500;
+}
+
+.option {
+  color: black;
+} 
+
+#button-Add {
+  padding: 10px 20px;
+  color: black;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border: 1px solid #0a0a0a;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+  color: white;
+  background-color: black;
+}
+
+.error-message {
+  color: #ff0000c2;
+  position: absolute;
+  display: flex;
+  font-size: small;
+  margin-right: 10px;
+}
+
+.elements-container {
+  display: flex;
+  justify-content: center;
+  width: 44%;
+  margin-top: 8px;
+}
+
+.style-type-doc {
+  width: 65%;
+}
+/* ANIMATION */
+form:before {
+  transform: translate(100%, -50%);
+  right: 52%;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 1024px) {
+  form {
+    padding: 5px;
+  }
+
+  label {
+    margin: 30px 2.5px 0px 2.5px;
+  }
+
+  input,
+  select {
+    margin-bottom: 15px;
+  }
+
+  button {
+    padding: 8px 15px;
+    margin-top: 34px;
+  }
+
+  .elements-container {
+    width: 75%;
+    flex-direction: column;
+  }
+
+  .style-type-doc {
+    width: 98%;
+  }
+
+  .buttons {
+    margin: 0;
+  }
+}

@@ -1,8 +1,31 @@
-# React + Vite
+<div align="center">
+<h1 align="center">Hola👋, ¡Bienvenidos a IRIS!</h1>
+</div>
+<img src="">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br>
 
-Currently, two official plugins are available:
+<h3 align="center">Diseñado para:</h3>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p>
+IRIS está diseñado para ser una herramienta integral que se ajuste a las necesidades de los propietarios y administradores de edificios, proporcionando una plataforma fácil de usar que garantiza la seguridad y la privacidad de los datos personales.
+</p>
+
+<br>
+
+<h3 align="center">instructivo de uso</h3>
+
+1. Crea una carpeta llamada iris en tu computador para este proyecto.
+2. Abre la carpeta creada con Visual Studio Code.
+3. Clona el siguiente repositorio en tu maquina:
+4. Avanza a la carpeta irisPropietarios con el comando cd irisPropietarios + enter
+5. Instala las dependencias usando el comando: npm install
+6. Ejecuta el comendo: npm run dev
+7. Da Click en la URL Local con el comando (ctrl + click) o copiando y pegando la ruta en un navegador web.
+8. Felicitaciones 🎉 ya puedes ver la pagina de IRIS, disfruta del recorrido 🚀.
+
+<br>
+
+<p>
+IRIS es una aplicación web diseñada para gestionar la información de los propietarios de un edificio, permitiendo almacenar y consultar datos personales y financieros. La plataforma facilita el acceso a información básica como tipo de documento, número de documento, nombres, apellidos, fecha de nacimiento, edad, correo electrónico y celular. Además, ofrece la posibilidad de consultar detalles sobre la liquidación de cuotas por administración y parqueadero, incluyendo el estado de pago. IRIS busca ser una herramienta integral para la administración de condominios, facilitando la gestión de información y procesos financieros de manera eficiente y segura.
+</p>
