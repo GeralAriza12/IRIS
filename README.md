@@ -1,7 +1,7 @@
 <div align="center">
 <h1 align="center">Hola👋, ¡Bienvenidos a IRIS!</h1>
 </div>
-<img src="">
+<img src="![1](https://github.com/GeralAriza12/IRIS/assets/116414042/385c37e1-2856-4a05-843c-265f9f504ff6)">
 
 <br>
 
