@@ -29,3 +29,9 @@ IRIS está diseñado para ser una herramienta integral que se ajuste a las neces
 <p>
 IRIS es una aplicación web diseñada para gestionar la información de los propietarios de un edificio, permitiendo almacenar y consultar datos personales y financieros. La plataforma facilita el acceso a información básica como tipo de documento, número de documento, nombres, apellidos, fecha de nacimiento, edad, correo electrónico y celular. Además, ofrece la posibilidad de consultar detalles sobre la liquidación de cuotas por administración y parqueadero, incluyendo el estado de pago. IRIS busca ser una herramienta integral para la administración de condominios, facilitando la gestión de información y procesos financieros de manera eficiente y segura.
 </p>
+
+<br>
+
+<h2>Proyecto IRIS</h2>
+<img src="https://github.com/GeralAriza12/IRIS/assets/116414042/51b3df95-f52d-4f11-8c86-9482906fd3ee">
+<img src="https://github.com/GeralAriza12/IRIS/assets/116414042/9a00bf14-5114-4c1b-85f4-8189f8b275d3">
