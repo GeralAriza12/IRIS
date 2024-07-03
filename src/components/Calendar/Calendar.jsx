@@ -3,18 +3,16 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import timeGridPlugin from "@fullcalendar/timegrid";
-import { useDisclosure, Box, Slide } from "@chakra-ui/react";
+import { useDisclosure, Box, Slide, useColorModeValue } from "@chakra-ui/react";
 import "./Calendar.css";
 
 const Calendar = () => {
-  // Función para generar eventos recurrentes
   const generateRecurringEvents = (interval, title, color) => {
     const events = [];
-    let currentDate = new Date(); // Comienza con la fecha actual
-    currentDate.setDate(30); // Que día del mes será el pago oportuno
-    currentDate.setHours(0, 0, 0, 0); // Asegura que la hora es la medianoche
+    let currentDate = new Date();
+    currentDate.setDate(30);
+    currentDate.setHours(0, 0, 0, 0);
 
-    // Genera eventos para los próximos 12 meses
     for (let i = 0; i < 12; i++) {
       const endDate = new Date(currentDate);
       endDate.setDate(endDate.getDate() + 1);
@@ -26,7 +24,6 @@ const Calendar = () => {
         color,
       });
 
-      // Avanza al siguiente mes
       currentDate.setMonth(currentDate.getMonth() + interval);
     }
 
@@ -50,18 +47,16 @@ const Calendar = () => {
   ]);
 
   const handleDateSelect = (selectInfo) => {
-    // Aqgregar un nuevo evento o ingresar un nuevo pago ...
     const title = prompt("Ingrese el título del evento");
     const newEvent = {
       title,
       start: selectInfo.startStr,
       end: selectInfo.endStr,
-      color: "red", // Asumiendo que el nuevo evento es pendiente
+      color: "red",
     };
     setEvents([...events, newEvent]);
   };
 
-  // const [isOpen, setIsOpen] = useState(false);
   const { isOpen, onOpen } = useDisclosure();
   const [selectedEvent, setSelectedEvent] = useState(null);
 
@@ -69,6 +64,8 @@ const Calendar = () => {
     setSelectedEvent(clickInfo.event);
     onOpen();
   };
+
+  const boxBg = useColorModeValue("#2c3e50", "gray.800");
 
   return (
     <div>
@@ -92,7 +89,7 @@ const Calendar = () => {
           p="40px"
           color="white"
           mt="4"
-          bg="#2c3e50"
+          bg={boxBg}
           rounded="md"
           shadow="md"
           display="flex"
